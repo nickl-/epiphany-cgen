@@ -44,26 +44,55 @@ set -x
 # hosted here in cgen.
 
 archs="
+cpu/arm.cpu
+cpu/arm7.cpu
+cpu/cris.cpu
 cpu/epiphany.cpu
 cpu/fr30.cpu
-cpu/arm.cpu
 cpu/frv.cpu
 cpu/i960.cpu
+cpu/ia32.cpu
+cpu/ia64.cpu
 cpu/ip2k.cpu
+cpu/iq10.cpu
 cpu/iq2000.cpu
+cpu/iq2000m.cpu
 cpu/lm32.cpu
+cpu/m32c.cpu
 cpu/m32r.cpu
+cpu/m68k.cpu
+cpu/mep-avc.cpu
+cpu/mep-avc2.cpu
+cpu/mep-c5.cpu
+cpu/mep-core.cpu
+cpu/mep-default.cpu
+cpu/mep-ext-cop.cpu
+cpu/mep-fmax.cpu
+cpu/mep-h1.cpu
+cpu/mep-ivc2.cpu
+cpu/mep-rhcop.cpu
+cpu/mep-sample-ucidsp.cpu
 cpu/mep.cpu
 cpu/mt.cpu
-cpu/or1k.cpu
-cpu/xstormy16.cpu
-cpu/arm.cpu
-cpu/i960.cpu
-cpu/m68k.cpu
-cpu/play.cpu
 cpu/openrisc.cpu
+cpu/or1k.cpu
+cpu/or1kcommon.cpu
+cpu/or1korbis.cpu
+cpu/or1korfpx.cpu
+cpu/play.cpu
 cpu/powerpc.cpu
+cpu/sh-sid.cpu
+cpu/sh-sim.cpu
 cpu/sh.cpu
+cpu/sh64-compact.cpu
+cpu/sh64-media.cpu
+cpu/sparc.cpu
+cpu/sparc32.cpu
+cpu/sparc64.cpu
+cpu/sparccom.cpu
+cpu/sparcfpu.cpu
+cpu/thumb.cpu
+cpu/xc16x.cpu
 cpu/xstormy16.cpu
 "
 
@@ -152,6 +181,7 @@ EOF
     frv-1.*) name="FRV FR400" ;;
     frv-2.*) name="FRV FR500" ;;
     openrisc.*) name="Openrisc" ;;
+    or1k.*) name="OpenRISC" ;;
     xstormy16.*) name="Xstormy16" ;;
     *) name=`echo ${html/.html} | tr $lower $upper` ;;
     esac
