@@ -9,7 +9,7 @@ rm -f ${cpu_file}
 
 cat > ${cpu_file} <<EOF
 (define-rtl-version 0 9)
-(include "${srcdir}/../cpu/simplify.inc")
+(include "${srcdir}/cpu/simplify.inc")
 (include "${srcdir}/testsuite.cpu")
 
 (define-pmacro test-insns (add sub))

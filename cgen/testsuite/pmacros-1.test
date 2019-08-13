@@ -6,7 +6,7 @@ gen_cpu_file() {
 
     cat > ${cpu_file} <<EOF
 (define-rtl-version ${rtl_version})
-(include "${srcdir}/../cpu/simplify.inc")
+(include "${srcdir}/cpu/simplify.inc")
 (include "${srcdir}/testsuite.cpu")
 
 (define-pmacro sym-const name1)

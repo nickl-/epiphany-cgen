@@ -28,15 +28,15 @@ set -x
 
 # ??? Broken archs not in list, grouped by error
 # h-prefixreg error
-#../cpu/cris.cpu
+# cpu/cris.cpu
 # Error: unexpected operand: #f
-# ../cpu/m32c.cpu
-# ../cpu/xc16x.cpu
+# cpu/m32c.cpu
+# cpu/xc16x.cpu
 # cpu/ia32.cpu
 # sh64-compact.cpu:316:3: Error: Instruction has opcode bits outside of its mask
-# ../cpu/sh.cpu
+# cpu/sh.cpu
 # ia64.cpu:924:invalid argument to %sym: (if (eq? (string-length "") 0) "" ".")
-# ../cpu/ia64.cpu
+# cpu/ia64.cpu
 # sparc.cpu:389:1: define-hardware: hardware already defined: h-gr
 # cpu/sparc.cpu
 
@@ -44,19 +44,19 @@ set -x
 # hosted here in cgen.
 
 archs="
-../cpu/epiphany.cpu
-../cpu/fr30.cpu
+cpu/epiphany.cpu
+cpu/fr30.cpu
 cpu/arm.cpu
-../cpu/frv.cpu
+cpu/frv.cpu
 cpu/i960.cpu
-../cpu/ip2k.cpu
-../cpu/iq2000.cpu
-../cpu/lm32.cpu
-../cpu/m32r.cpu
-../cpu/mep.cpu
-../cpu/mt.cpu
-../cpu/or1k.cpu
-../cpu/xstormy16.cpu
+cpu/ip2k.cpu
+cpu/iq2000.cpu
+cpu/lm32.cpu
+cpu/m32r.cpu
+cpu/mep.cpu
+cpu/mt.cpu
+cpu/or1k.cpu
+cpu/xstormy16.cpu
 cpu/arm.cpu
 cpu/i960.cpu
 cpu/m68k.cpu

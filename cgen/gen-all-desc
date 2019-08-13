@@ -36,22 +36,22 @@ set -x
 archs="
 cpu/fr30.cpu
 cpu/arm.cpu
-../cpu/cris.cpu
-../cpu/frv.cpu
+cpu/cris.cpu
+cpu/frv.cpu
 cpu/i960.cpu
 cpu/ip2k.cpu
-../cpu/iq2000.cpu
-../cpu/lm32.cpu
-../cpu/m32c.cpu
-../cpu/m32r.cpu
+cpu/iq2000.cpu
+cpu/lm32.cpu
+cpu/m32c.cpu
+cpu/m32r.cpu
 cpu/m68k.cpu
 cpu/mep.cpu
-../cpu/mt.cpu
+cpu/mt.cpu
 cpu/openrisc.cpu
 cpu/powerpc.cpu
 cpu/sh.cpu
 cpu/sparc.cpu
-../cpu/xc16x.cpu
+cpu/xc16x.cpu
 cpu/xstormy16.cpu
 "
 
@@ -76,7 +76,7 @@ export cgendir=`pwd`
 
   for a in $archs
   do
-    archfile=../$a
+    archfile=$cgendir/$a
     arch=$(basename $archfile .cpu)
 
     # FIXME: Seems like this shouldn't be needed.  Could be wrong though.

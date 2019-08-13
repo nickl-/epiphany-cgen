@@ -8,7 +8,7 @@ cpu_file=${test}.test.cpu
 rm -f ${cpu_file}
 
 cat > ${cpu_file} <<EOF
-(include "${srcdir}/../cpu/simplify.inc")
+(include "${srcdir}/cpu/simplify.inc")
 (include "${srcdir}/testsuite.cpu")
 
 (define-insn (name (add 3))
