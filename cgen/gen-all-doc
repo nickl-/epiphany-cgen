@@ -88,7 +88,7 @@ export cgendir=`pwd`
 
   for a in $archs
   do
-    archfile=../$a
+    archfile=$cgendir/$a
     arch=$(basename $archfile .cpu)
 
     case $arch in
